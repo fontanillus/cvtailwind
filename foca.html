@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>focas</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="font-sans text-base leading-6 w-4/5 mx-auto bg-neutral-100">
+    <header class="w-full bg-blue-900 text-white text-center py-2.5">
+        <a href="index.html" title="Inicio" aria-label="Ir a inicio" class="inline-flex items-center justify-center text-white no-underline">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentcolor" viewBox="0 0 16 16">
+                <path
+                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+            </svg>
+        </a>
+    </header>
+    <main class="mt-6 mb-10">
+    <h1 class="text-4xl font-bold text-[#4f7ea8] mb-2">FocaPhotoApp</h1>
+    <cite class="block text-gray-600 mb-3">Versión modificada en español del primer ejercicio de la certificación sobre <a class="text-[#4f7ea8] hover:underline" target="_blank"
+            href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" rel="noopener noreferrer">Responsive
+            Web Design</a>
+        de freecodecamp</cite>
+    <hr class="my-4 border-gray-300">
+    <p class="mb-3">Clica sobre la foto para ver más <a class="text-[#4f7ea8] hover:underline" href="https://www.istockphoto.com/es/search/2/image-film?phrase=focas">fotos
+            de foquitas <img class="block mx-auto mt-2 max-w-full w-48 h-auto" src="./img/foca1.png" alt="foca"></a>
+    </p>
+    <div class="overflow-x-auto">
+    <table class="w-full my-4 border border-[#4f7ea8] border-collapse bg-white [&_tr]:border [&_tr]:border-black [&_td]:border [&_td]:border-black [&_td]:text-center [&_td]:p-2 [&_th]:border [&_th]:border-black [&_th]:bg-[#4f7ea8] [&_th]:text-white [&_th]:text-center [&_th]:p-1 [&_li]:leading-6">
+        <thead>
+            <tr>
+                <th colspan="2">
+                    <h2 class="text-2xl font-bold">Síes y Noes de las focas</h2>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <p class="text-xl font-semibold">Cosas que las focas aman</p>
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    <ul class="list-disc pl-5 text-left">
+                        <li>Nadar y bucear durante horas</li>
+                        <li>Tumbarse en rocas o playas</li>
+                        <li>Se divierten jugando: persiguen burbujas, <br>se persiguen entre ellas y exploran objetos en
+                            el agua</li>
+                        <li>comunicarse haciendo sonidos</li>
+                    </ul>
+                </td>
+                <td>
+                    <figure class="text-center m-0">
+                        <img class="block mx-auto max-w-full h-auto" src="./img/smile-cute.gif" alt="sonrisa">
+                        <figcaption class="text-sm text-gray-700">A las focas les encanta jugar persiguiendo burbujas <br> o jugando entre ellas
+                            simulando persecuciones</figcaption>
+                    </figure>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ol class="list-decimal pl-5 text-left">
+                        <li>El ruido, los depredadores y la presencia humana.</li>
+                        <li>Los ruidos fuertes ni sentirse amenazadas.</li>
+                        <li>Son sensibles a la contaminación y a las molestias externas.</li>
+                    </ol>
+                </td>
+                <td>
+                    <figure class="text-center m-0">
+                        <img class="block mx-auto max-w-full h-auto" src="./img/cute-seal.gif" alt="foca triste">
+                        <figcaption class="text-sm text-gray-700">A las focas no les gusta actividad constante cerca de su zona</figcaption>
+                    </figure>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+    <form class="w-full mt-6">
+
+        <h3 class="text-2xl font-bold text-[#4f7ea8] mb-3">Encuesta sobre las focas</h3>
+
+        <fieldset class="w-full box-border border border-gray-300 p-3 mb-4 bg-gray-50">
+            <legend class="font-semibold text-[#4f7ea8] px-1">¿Dónde prefieren estar las focas?</legend>
+
+            <label class="inline-block mr-4 font-bold">
+                <input class="mr-1" type="radio" name="lugar" value="mar" checked>
+                En el mar
+            </label>
+
+            <label class="inline-block mr-4 font-bold">
+                <input class="mr-1" type="radio" name="lugar" value="costa">
+                En la costa o rocas
+            </label>
+        </fieldset>
+
+        <fieldset class="w-full box-border border border-gray-300 p-3 mb-4 bg-gray-50">
+            <legend class="font-semibold text-[#4f7ea8] px-1">¿Qué les gusta hacer a las focas?</legend>
+
+            <label class="inline-block mr-4 font-bold">
+                <input class="mr-1" type="checkbox" name="nadar" value="nadar" checked>
+                Nadar
+            </label>
+
+            <label class="inline-block mr-4 font-bold">
+                <input class="mr-1" type="checkbox" name="jugar" value="jugar" checked>
+                Jugar
+            </label>
+
+            <label class="inline-block mr-4 font-bold">
+                <input class="mr-1" type="checkbox" name="descansar" value="descansar">
+                Descansar al sol
+            </label>
+        </fieldset>
+
+        <fieldset class="w-full box-border border border-gray-300 p-3 mb-4 bg-gray-50">
+            <legend class="font-semibold text-[#4f7ea8] px-1">¿Qué comen las focas?</legend>
+
+            <label class="inline-block mr-4 font-bold">
+                <input class="mr-1" type="radio" name="comida" value="peces" checked>
+                Peces
+            </label>
+
+            <label class="inline-block mr-4 font-bold">
+                <input class="mr-1" type="radio" name="comida" value="plantas">
+                Plantas
+            </label>
+        </fieldset>
+
+        <fieldset class="w-full box-border border border-gray-300 p-3 mb-4 bg-gray-50">
+            <p><b>Sube tu foto preferida de una foca</b>
+                <label for="archivo" class="font-bold ml-2">Archivo:</label>
+                <input id="archivo" type="file" class="ml-2">
+            </p>
+        </fieldset>
+
+        <input type="submit" value="Enviar" class="bg-gray-200 border border-gray-500 px-3 py-1 text-sm hover:bg-gray-300 cursor-pointer">
+        <hr class="my-4 border-gray-300">
+    </form>
+    <footer class="bg-gray-200 text-center py-2">
+        <p>No Copyright - <a class="text-[#4f7ea8] hover:underline" href="https://www.freecodecamp.org/">freeCodeCamp.org</a></p>
+    </footer>
+    </main>
+
+</body>
+
+</html>

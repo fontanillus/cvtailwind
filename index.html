@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>cv tailwind</title>
+</head>
+
+
+<body class="font-sans text-base w-4/5 mx-auto">
+  <header class="w-full bg-blue-900 text-white text-center py-2.5">
+    <nav class="flex flex-wrap items-center justify-center gap-4 [&>a]:inline-flex [&>a]:items-center [&>a]:gap-1 [&>a]:px-2 [&>a]:py-1">
+      <a href="educacion.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 20 20">
+          <path fill="currentcolor"
+            d="M3.33 8L10 12l10-6l-10-6L0 6h10v2H3.33zM0 8v8l2-2.22V9.2L0 8zm10 12l-5-3l-2-1.2v-6l7 4.2l7-4.2v6L10 20z" />
+        </svg>Educación Formal</a>
+        <a href="certificados.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="1em" fill="currentColor"
+          viewBox="0 0 16 16">
+          <path
+            d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z" />
+          <path
+            d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31" />
+        </svg>Certificados</a>
+        <a href="experiencia.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" fill="currentColor"
+          viewBox="0 0 16 16">
+          <path
+            d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5" />
+          <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85z" />
+        </svg>Experiencia</a>
+        <a href="mapa.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" fill="currentColor"
+          viewBox="0 0 16 16">
+          <path
+            d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z" />
+          <path
+            d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31" />
+        </svg>Idiomas</a>
+      <a href="tecnologia.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 1024 832">
+          <path fill="currentcolor"
+            d="M960 832H64q-26 0-45-18.5t-19-45T19 723t45-19h896q26 0 45 19t19 45.5t-19 45t-45 18.5zm-64-192H128q-26 0-45-18.5T64 576V64q0-26 19-45t45-19h768q27 0 45.5 19T960 64v512q0 27-18.5 45.5T896 640zm0-544q0-13-9.5-22.5T864 64H160q-13 0-22.5 9.5T128 96v384q0 13 9.5 22.5T160 512h704q13 0 22.5-9.5T896 480V96zm-704 31h384L192 448V127z" />
+        </svg>Tecnologías</a>
+        <a href="softkills.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" fill="currentColor"
+          viewBox="0 0 16 16">
+          <path
+            d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z" />
+        </svg>Softskills</a>
+        <a href="aficiones.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" fill="currentColor"
+          viewBox="0 0 16 16">
+          <path
+            d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375 2.281 4.2-3.376 3.464-4.852-.87-5.23-1.98-.07-.204-.103-.3-.103-.218 0-.081-.033.014-.102.218-.379 1.11-1.855 5.444-5.231 1.98-1.778-1.825-.955-3.65 2.28-4.2-1.85.315-3.932-.205-4.503-2.246C.28 6.737 0 3.12 0 2.632 0 .186 2.145.955 3.468 1.948" />
+        </svg>Aficiones</a>
+    </nav>
+  </header>
+  <main class="mt-8 space-y-4">
+    <figure class="flex flex-col items-start gap-2">
+      <img src="./img/tarjeta.png" class="w-[250px] rounded-md" alt="Foto de Yolanda Fontanillas Yuste">
+      <figcaption class="text-sm font-medium text-gray-700">Yolanda Fontanillas Yuste</figcaption>
+    </figure>
+    <h2 class="text-2xl font-bold">Presentación</h2>
+    <section class="space-y-4">
+      <div class="max-w-3xl space-y-4">
+        <h2 class="text-xl font-semibold text-blue-900">Arquitecta de Marketing Digital</h2>
+
+        <p class="leading-relaxed text-gray-800">
+          Diseño estructuras digitales orientadas a conversión para emprendedores y pequeñas empresas.
+        </p>
+
+        <p class="leading-relaxed text-gray-800">
+          Creo sistemas que permiten comunicar el valor de un negocio, atraer clientes y convertir la presencia digital
+          en una herramienta estratégica.
+        </p>
+
+        <p class="leading-relaxed text-gray-800">
+          Integro desarrollo web, SEO, contenido y experiencia de usuario dentro de una arquitectura digital coherente.
+        </p>
+
+        <p class="leading-relaxed text-gray-800">
+          Utilizo inteligencia artificial para optimizar procesos, automatizar tareas y mejorar resultados.
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer class="mt-8 bg-gray-300 text-center text-sm">
+    <div>&copy; Yolanda Fontanillas Yuste 2026.</div>
+    <div>
+      <a href="mailto:yolandafontanillasyuste@gmail.com">yolandafontanillasyuste@gmail.com</a>
+      <a href="https://wa.me/65999999">WhatsApp</a>
+      <a href="tel:+34649823117">+34 649 823 117</a>
+      <a href="https://www.linkedin.com/in/yolanda-fontanillas" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/fontanillus/" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://yolandafontanillas.lovable.app" target="_blank" rel="noopener noreferrer">Web Presentación</a>
+      <a href="https://fontanillus.es/" target="_blank" rel="noopener noreferrer">Presentación Wordpress</a>
+    </div>
+  </footer>
+  <br>
+</body>
+
+</html>
